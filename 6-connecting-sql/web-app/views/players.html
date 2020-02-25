@@ -1,0 +1,5 @@
+<ul class="players">
+  {% for player in players %}
+    <li><a href="{{url_for('show_player', player_id = player.id)}}">{{ player.name }}</a></li>
+  {% endfor %}
+  </ul>
